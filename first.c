@@ -1,13 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {    
+
+    if (argc != 2){
+        printf("Error. Please run the program with exactly one integer input.");
+        return 0;
+    }
     
-    if(x < 2 || argc != 1) {
+    int x = atoi(argv[1]);
+
+    if(x < 2) {
         printf("Error. Please enter a positive integer larger than 2 next time!");
         return 0;
     }
-
-    int x = argc[0];
 
     int numbers [x-1];
 
